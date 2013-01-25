@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Test Comments</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" async="async" src="ViafouraFollowWidget.js"></script>
+    <script>
+        (function (v, s) {
+            v.type = 'text/javascript';
+            v.async = false;
+            v.src = location.protocol !== 'https:' ? '//cdn.viafoura.net/vf.js' : '//api.viafoura.com/app/js/vf.js';
+            s.parentNode.insertBefore(v, s)
+        }(document.createElement('script'), document.getElementsByTagName('script')[0]));
+        (function($){
+            $(document).ready(function(){
+                $('.vf-custom-follow-link').ViafouraFollowWidget(
+                        {
+                            followLabelText:"Follow Link",
+                            unFollowLabelText:"Unfollow Link"
+                        }
+                );
+            });
+        })(jQuery);
+    </script>
+</head>
+<body>
+Simple Follow Widget Example
+<br />
+========================================================
+<br />
+<a href="" class="vf-custom-follow-link" data-id="7000000043343">follow</a>
+<br />
+=========================================================
+</body>
+</html>
