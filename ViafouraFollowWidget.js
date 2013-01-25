@@ -17,6 +17,11 @@
 
             return this.each(function(){
                 var el = $(this);
+
+                el.attr('data-d') || el.attr('data-d','subscribe-user');
+                el.attr('data-t') || el.attr('data-t','tooltip');
+                el.addClass('vf-has-tooltip');
+
                 var widgetObject = new LoginWidget(el, settings);
                 if(typeof Viafoura == 'undefined'){
                     allWidgets.push(widgetObject);
@@ -44,6 +49,7 @@
         var self = this;
         self.followQueue = false;
         self.userId = el.attr('data-id');
+
 
         this.bindEvents = function(){
 

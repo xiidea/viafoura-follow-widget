@@ -6,8 +6,11 @@ Easy Custom Follow Link Integration of Viafoura
 Key Features
 ============
 * Easy to integrate with any Application working with Viafoura
-* Support Follow status!
 * Next to zero configuration!!
+* Support user login!!
+* Create Viafoura user session cookie for you!!
+* Support Follow status!
+* Currently only support to follow user's comments only(follow article's comments will coming soon)
 
 
 Current Active Version
