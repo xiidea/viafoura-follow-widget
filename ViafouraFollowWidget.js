@@ -59,11 +59,12 @@
                     Viafoura.publish('/services/unfollow',self.userId);
                     self.updateFollowStatus(false);
                 }else{
-                    Viafoura.publish('/services/follow',self.userId);
                     if(!(self.Viafoura.current.user.id && self.Viafoura.current.user.id != 0)){
                         self.followQueue = true;
+                        Viafoura.publish('/user/login/click');
                     }else{
                         self.updateFollowStatus(true);
+                        Viafoura.publish('/services/follow',self.userId);
                     }
                 }
             });
