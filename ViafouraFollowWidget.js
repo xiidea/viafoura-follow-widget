@@ -124,6 +124,12 @@
                     createCookie('vf_session', "");
                 }
             });
+
+            Viafoura.subscribe('/user/logout', function () {
+                self.updateFollowStatus(false);
+                createCookie('vf_session', "");
+            });
+
         };
     };
 
